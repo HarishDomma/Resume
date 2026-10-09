@@ -2761,23 +2761,14 @@
    }
  }
 
- ._contactSection_l742t_2131 {
-   opacity: 0;
-   transform: translateY(30px);
-   transition: opacity .8s var(--bezierFastoutSlowin), transform .8s var(--bezierFastoutSlowin);
+._contactSection_l742t_2131 {
+  text-align: center;
+  padding: var(--spaceXL) 0;
+  margin-top: var(--space2XL);
+  position: relative;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
-
-._contactSection_l742t_2131[data-visible=true] {
-   opacity: 1;
-   transform: translateY(0);
-}
-
-._contactSection_l742t_2131_orig {
-   text-align: center;
-   padding: var(--spaceXL) 0;
-   margin-top: var(--space2XL);
-   position: relative
- }
 
  ._contactButtons_l742t_2145 {
    display: flex;
