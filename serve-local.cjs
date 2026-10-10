@@ -71,6 +71,14 @@ http.createServer((request, response) => {
       revealAll();
       window.addEventListener('DOMContentLoaded', revealAll);
 
+      const techStack = page.querySelector('._techStackContainer_l742t_495');
+      if (techStack && 'IntersectionObserver' in window) {
+        const techStackObserver = new IntersectionObserver(([entry]) => {
+          techStack.setAttribute('data-glow', String(entry.isIntersecting));
+        }, { threshold: 0.2 });
+        techStackObserver.observe(techStack);
+      }
+
       let animationFrameId;
       function updateParallax() {
         const scrollY = window.scrollY || window.pageYOffset || 0;
