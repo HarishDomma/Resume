@@ -72,6 +72,13 @@ export default function Resume() {
   }, [menuOpen]);
 
   useEffect(() => {
+    const thirdResumeRow = pageRef.current?.querySelectorAll(
+      '._resumeRow_l742t_225',
+    )[2];
+    thirdResumeRow?.setAttribute('data-layout', 'vertical');
+  }, []);
+
+  useEffect(() => {
     const techStack = pageRef.current?.querySelector(
       '._techStackContainer_l742t_495',
     );

@@ -1865,6 +1865,12 @@
    }
  }
 
+ ._resumeRow_l742t_225[data-layout=vertical] ._resumeHeader_l742t_339 {
+   flex-direction: column;
+   align-items: flex-start;
+   gap: var(--spaceXS)
+ }
+
  ._resumeHeaderLeft_l742t_367 {
    flex: 1;
    min-width: 0

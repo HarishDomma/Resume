@@ -71,6 +71,9 @@ http.createServer((request, response) => {
       revealAll();
       window.addEventListener('DOMContentLoaded', revealAll);
 
+      const thirdResumeRow = page.querySelectorAll('._resumeRow_l742t_225')[2];
+      if (thirdResumeRow) thirdResumeRow.setAttribute('data-layout', 'vertical');
+
       const techStack = page.querySelector('._techStackContainer_l742t_495');
       if (techStack && 'IntersectionObserver' in window) {
         const techStackObserver = new IntersectionObserver(([entry]) => {
